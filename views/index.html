@@ -14,7 +14,7 @@
 					<li class='nav-profile'>Me</li>
 				</ul>
 				<img class='nav-icon'>Insert Twitter Icon</img>
-				<form class='nav-global-search' action='/search'>
+				<form class='nav-global-search' action='/search' method='post'>
 					<input class='search-input' type='text' placeholder='Search Twitter' name='query'>
 					<button type='submit' class='search-icon'></button>
 				</form>
@@ -28,7 +28,29 @@
 		<main>
 			<aside id='dashboard-left' class='dashboard'>
 				<section class='dashboard-profile-card'>
-					<h1 class='dashboard-h1'>Jeremy Fox</h1> 
+					<figure>Insert Profile Pic</figure>
+					<h1 class='dashboard-name'>Jeremy Fox</h1> 
+					<h2 class='dashboard-user'>
+						<a href='/foxjerem'>@foxjerem</a>
+					</h2>
+					<ul class='dashboard-user-stats'>
+						<li class='user-stat'>
+							<h3 class='user-stat-header'>TWEETS</h3>
+							<var class='user-stat-data-item'>0</var>
+						</li>
+						<li class='user-stat'>
+							<h3 class='user-stat-header'>FOLLOWING</h3>
+							<var class='user-stat-data-item'>2</var>
+						</li>
+						<li class='user-stat'>
+							<h3 class='user-stat-header'>FOLLOWERS</h3>
+							<var class='user-stat-data-item'>1</var>
+						</li>
+					</ul>
+					<form class='tweet-box' action='/tweets/new' method='post'>
+						<input type='text' name='tweet-body' placeholder='Compose new Tweet...'>
+						<button class='submit-tweet-button' type='submit'>
+					</form>
 				</section>
 				<section class='trends'>
 					<h1 class='dashboard-h1'>Trends</h1>
