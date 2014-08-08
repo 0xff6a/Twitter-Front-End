@@ -63,10 +63,37 @@ body{
 	margin-right: 20px;
 }
 
-/*User dashboard*/
+/*User dashboard left*/
 .dashboard {
 	float: left;
 	width: 290px;
+}
+
+.dashboard-profile-card {
+	background-color: white;
+	border-radius: 8px;
+	margin-top: 80px;
+}
+
+.dashboard-profile-card-block-link {
+	background-color: #0084B4;
+	height: 95px;
+	border-radius: 8px 8px 0 0;
+}
+
+.dashboard-trends {
+	background-color: white;
+	border-radius: 8px;
+	margin-top: 10px;
+}
+
+.dashboard-tweet-box {
+	background-color: #E5F2F7;
+	border-radius: 0 0 8px 8px;
+}
+
+/*User dashboard right*/
+.dashboard-link-container {
 	background-color: white;
 	border-radius: 8px;
 	margin-top: 80px;
