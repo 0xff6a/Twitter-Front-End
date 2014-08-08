@@ -27,30 +27,36 @@
 		</header>
 		<main>
 			<aside id='dashboard-left' class='dashboard'>
+
 				<section class='dashboard-profile-card'>
-					<figure>Insert Profile Pic</figure>
-					<h1 class='dashboard-name'>Jeremy Fox</h1> 
-					<h2 class='dashboard-user'>
-						<a href='/foxjerem'>@foxjerem</a>
-					</h2>
-					<ul class='dashboard-user-stats'>
-						<li class='user-stat'>
-							<h3 class='user-stat-header'>TWEETS</h3>
-							<var class='user-stat-data-item'>0</var>
-						</li>
-						<li class='user-stat'>
-							<h3 class='user-stat-header'>FOLLOWING</h3>
-							<var class='user-stat-data-item'>2</var>
-						</li>
-						<li class='user-stat'>
-							<h3 class='user-stat-header'>FOLLOWERS</h3>
-							<var class='user-stat-data-item'>1</var>
-						</li>
-					</ul>
-					<form class='tweet-box' action='/tweets/new' method='post'>
-						<input type='text' name='tweet-body' placeholder='Compose new Tweet...'>
-						<button class='submit-tweet-button' type='submit'>
-					</form>
+					<section class='dashboard-profile-card-block-link'>
+						<a href='foxjerem' tabindex= -1 aria-hidden='true'></a>
+					</section>
+					<section class='dashboard-profile-card-content'>
+						<figure>Insert Profile Pic</figure>
+						<h1 class='dashboard-name'>Jeremy Fox</h1> 
+						<h2 class='dashboard-user'>
+							<a href='/foxjerem'>@foxjerem</a>
+						</h2>
+						<ul class='dashboard-user-stats'>
+							<li class='user-stat'>
+								<h3 class='user-stat-header'>TWEETS</h3>
+								<var class='user-stat-data-item'>0</var>
+							</li>
+							<li class='user-stat'>
+								<h3 class='user-stat-header'>FOLLOWING</h3>
+								<var class='user-stat-data-item'>2</var>
+							</li>
+							<li class='user-stat'>
+								<h3 class='user-stat-header'>FOLLOWERS</h3>
+								<var class='user-stat-data-item'>1</var>
+							</li>
+						</ul>
+						<form class='tweet-box' action='/tweets/new' method='post'>
+							<input type='text' name='tweet-body' placeholder='Compose new Tweet...'>
+							<button class='submit-tweet-button' type='submit'>
+						</form>
+					</section>
 				</section>
 				<section class='dashboard-trends'>
 					<h1 class='dashboard-trends-header'>Trends</h1>
