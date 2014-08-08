@@ -7,6 +7,11 @@ body{
 	background-repeat: repeat;
 	background-repeat: no-repeat;
 	background-color: #C0DEED;
+	font-family: "Gotham Narrow SSm",sans-serif,Arial;
+}
+
+a {
+	color: black;
 }
 
 .page-wrapper {
@@ -75,6 +80,70 @@ body{
 	margin-top: 80px;
 }
 
+.dashboard-avatar {
+	width: 80px;
+	height: 80px;
+	border-radius: 8px;
+	margin: -40px 0 0 10px;
+}
+
+.dashboard-user-info {
+	margin-top: -40px;
+	margin-left: 90px;
+}
+
+.dashboard-name {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	margin: 0;
+	margin-left: 10px;
+}
+
+.dashboard-user {
+	font-size: 14px;
+	line-height: 16px;
+	margin: 0;
+	margin-left: 10px;
+}
+
+.dashboard-user a {
+	font-size: 14px;
+	color: #8c9ca9;
+	font-weight: normal;
+}
+
+.user-stat-data-item {
+	font-size: 18px;
+	font-weight: 500;
+	color: #0084B4;
+	font-style: normal;
+}
+
+.dashboard-user-stats {
+	text-align: center;
+}
+
+.dashboard-user-stats-list {
+	margin: 0 auto;
+	list-style-type: none;
+	display: inline-flex;
+	text-align: center;
+	padding: 0;
+}
+
+.user-stat-header {
+	color: #8c9ca9;
+	font-size: 10px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+.user-stat {
+	margin-right: 25px;
+	margin-left: 10px;
+}
+
 .dashboard-profile-card-block-link {
 	background-color: #0084B4;
 	height: 95px;
@@ -90,7 +159,22 @@ body{
 .dashboard-tweet-box {
 	background-color: #E5F2F7;
 	border-radius: 0 0 8px 8px;
+	height:	50px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 20px;
 }
+
+.dashboard-tweet-box button {
+	display: none;
+}
+
+.tweet-box input {
+	width: 250px;
+	font-size: 14px;
+	font-weight: 300;
+}
+
 
 /*User dashboard right*/
 .dashboard-link-container {
