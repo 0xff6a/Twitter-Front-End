@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel='stylesheet' type='text/css' href='/css/style.css'>
-		<title>Twitter</title>
+		<link rel='stylesheet' type='text/css' href='../public/css/style.css'>
+		<title>
+			Twitter
+		</title>
 	</head>
 	<body>
 		<header>
-			<nav class='nav-bar'>
-				<ul class='nav-items-right'>
-					<li class='nav-home'>Home</li>
-					<li class='nav-notifications'>Notifications</li>
-					<li class='nav-topics'>Discover</li>
-					<li class='nav-profile'>Me</li>
-				</ul>
-				<img class='nav-icon'>Insert Twitter Icon</img>
-				<form class='nav-global-search' action='/search' method='post'>
-					<input class='search-input' type='text' placeholder='Search Twitter' name='query'>
-					<button type='submit' class='search-icon'></button>
-				</form>
-				<ul class='nav-items-left'>
-					<li class='nav-direct-msg'>Direct Message</li>
-					<li class='nav-settings'>Settings</li>
-					<li class='new-tweet'>New Tweet</li>
-				</ul>
-			</nav>
+			<section class='nav-bar-container'>
+				<nav class='nav-bar'>
+					<ul class='nav-items-right'>
+						<li class='nav-home'>Home</li>
+						<li class='nav-notifications'>Notifications</li>
+						<li class='nav-topics'>Discover</li>
+						<li class='nav-profile'>Me</li>
+					</ul>
+					<img class='nav-icon' src='http://i.imgur.com/JJ3TOHT.gif'></img>
+					<form class='nav-global-search' action='/search' method='post'>
+						<input class='search-input' type='text' placeholder='Search Twitter' name='query'>
+						<button type='submit' class='search-icon'></button>
+					</form>
+					<ul class='nav-items-left'>
+						<li class='nav-direct-msg'>Direct Message</li>
+						<li class='nav-settings'>Settings</li>
+						<li class='new-tweet'>New Tweet</li>
+					</ul>
+				</nav>
+			</section>
 		</header>
 		<main>
 			<aside id='dashboard-left' class='dashboard'>

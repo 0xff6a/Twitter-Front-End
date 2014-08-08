@@ -1,0 +1,57 @@
+body{
+	background-image: url(https://abs.twimg.com/images/themes/theme1/bg.png);
+	background-position: left 40px;
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-repeat: no-repeat;
+	background-color: #C0DEED;
+}
+
+/*Navigation bar*/
+
+.nav-icon {
+	width: 40px;
+	height: auto;
+	margin: 0px 100px;
+}
+
+.nav-bar-container {
+	height: 50px;
+	width: 100%;
+	display: inline-block;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1000;
+	text-align: center;
+}
+
+
+.nav-bar {
+	margin-left: auto;
+  margin-right: auto;
+ 	width: 1190px;
+	height:	50px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.nav-items-right {
+	list-style-type: none;
+	display: inline-flex;
+}
+
+.nav-items-right li{
+	margin-right: 20px;
+}
+
+.nav-items-left {
+	list-style-type: none;
+	display: inline-flex;
+}
+
+.nav-items-left li{
+	margin-right: 20px;
+}
