@@ -150,12 +150,6 @@ a {
 	border-radius: 8px 8px 0 0;
 }
 
-.dashboard-trends {
-	background-color: white;
-	border-radius: 8px;
-	margin-top: 10px;
-}
-
 .dashboard-tweet-box {
 	background-color: #E5F2F7;
 	border-radius: 0 0 8px 8px;
@@ -175,12 +169,47 @@ a {
 	font-weight: 300;
 }
 
+.dashboard-trends-holder {
+	background-color: white;
+	border-radius: 8px;
+	margin-top: 10px;
+	color: #0084B4;
+}
+
+
+.dashboard-trends-header {
+	font-weight: 500;
+	margin-bottom: 0px;
+}
+
+.dashboard-trends-holder li {
+	list-style: none;
+	font-weight: 100;
+	font-size: 14px;
+}
+
+.dashboard-trends ul {
+	margin-top: 5px;
+}
+
 
 /*User dashboard right*/
 .dashboard-link-container {
 	background-color: white;
 	border-radius: 8px;
 	margin-top: 80px;
+}
+
+.dashboard-nav-header {
+	color: #0084B4;
+	font-weight: normal;
+	
+}
+
+.dashboard-nav-link-list a, ul{
+	color: #0084B4;
+	text-decoration: none;
+	list-style: none;
 }
 
 /*Main Feed*/
@@ -193,5 +222,13 @@ a {
 	margin-left: 10px;
 	margin-right: 10px;
 	border-radius: 8px;
+}
+
+.main-feed-header {
+	color: #66757f;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 22px;
+	margin-left: 10px;
 }
 
