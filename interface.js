@@ -12,11 +12,12 @@ $(document).ready(function(){
 	$('#submit-tweet-button2').click( function(event){
 		
 		event.preventDefault();
+
 		var newTweet = $('#pop-up-tweet-input').val();
-		$('.stream-holder').prepend("	<section class='tweet-holder'><article class='tweet-body'>" 
-			+ newTweet + "</article></section>").slideDown();
+		
 		$('#pop-up-tweet-input').val(' ');
 		$('#dialogue').dialog('close');
+		appendTweetToStream(newTweet);
 
 	});
 
@@ -28,22 +29,25 @@ $(document).ready(function(){
 		$('#dashboard-tweet-box1').height(140);
 		$('#submit-tweet-button1').show();
 
-
 	});
 
 	$('#submit-tweet-button1').click( function(event) {
+		
 		event.stopPropagation();
+		
 		var newTweet = $('#dashboard-tweet-input1').val();
 		
-		$('#dashboard-tweet-input1').val(' ');
+		$('#dashboard-tweet-input1').attr('placeholder', 'Compose new tweet...').val('').focus().blur();
 		$('#submit-tweet-button1').hide();
 		$('#dashboard-tweet-input1').height(20);
 		$('#dashboard-tweet-box1').height(50);
-
-		$('.stream-holder').prepend("	<section class='tweet-holder'><article class='tweet-body'>" 
-			+ newTweet + "</article></section>").slideDown();
-
+		appendTweetToStream(newTweet);
 
 	});
+
+	function appendTweetToStream(tweetBody) {
+		$('.stream-holder').prepend("	<section class='tweet-holder'><article class='tweet-body'>" 
+			+ tweetBody + "</article></section>").slideDown();
+	};
 	
 });
