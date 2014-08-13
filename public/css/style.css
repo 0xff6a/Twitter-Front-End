@@ -103,7 +103,7 @@ a {
 }
 
 .Icon--Xlarge {
-	font-size: 35px;
+	font-size: 30px;
 	line-height: 1;
 	background-color: #8c9ca9;
 	margin-top: -7px;
@@ -131,7 +131,13 @@ a {
 .Icon--me:before { content: "\f056"; }
 .Icon--message:before { content: "\f054"; }
 .Icon--settings:before { content: "\f059"; }
-.Icon--tweet:before { content: "\f029"; }
+.Icon--tweet:before { 
+	content: "\f029"; 
+	background: #0084B4;
+	padding: 3px 7px;
+	border-radius: 6px;
+	color: white;
+}
 .Icon--search:before { content: "\f058"; }
 
 .nav-bar > ul > li > a {
