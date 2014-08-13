@@ -9,14 +9,21 @@ $(document).ready(function(){
 
 	});
 
-	$('#submit-tweet-button').click( function(event){
+	$('.submit-tweet-button').click( function(event){
 		
 		event.preventDefault();
 		var newTweet = $('#pop-up-tweet-input').val();
-		$('.stream-holder').prepend("	<section class='tweet-holder'><article class='tweet-body'>" + newTweet + "</article></section>").slideDown();
+		$('.stream-holder').prepend("	<section class='tweet-holder'><article class='tweet-body'>" 
+			+ newTweet + "</article></section>").slideDown();
+		$('#pop-up-tweet-input').val(' ');
+		$('#dialogue').dialog('close');
 
 	});
 
+	$('#dashboard-tweet-box1').click( function() {
+		$('#dashboard-tweet-input1').height(80);
+		$('#dashboard-tweet-box1').height(140);
+	});
 
 
 

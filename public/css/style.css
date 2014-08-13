@@ -190,7 +190,7 @@ a {
 #pop-up-tweet-input {
 	height: 65px;
 	width: 200px;
-	text-align: center;
+	text-align: center;x§
 	margin-top: -20px;
 	 
 }
@@ -318,6 +318,11 @@ a {
 	border-radius: 8px;
 	margin-top: 10px;
 	color: #0084B4;
+}
+
+#dialogue > form > input {
+	height: 50px;
+	width: 200px;
 }
 
 
