@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 	});
 
-	$('.submit-tweet-button').click( function(event){
+	$('#submit-tweet-button2').click( function(event){
 		
 		event.preventDefault();
 		var newTweet = $('#pop-up-tweet-input').val();
@@ -21,18 +21,29 @@ $(document).ready(function(){
 	});
 
 	$('#dashboard-tweet-box1').click( function() {
+
+		event.preventDefault();
+		
 		$('#dashboard-tweet-input1').height(80);
 		$('#dashboard-tweet-box1').height(140);
+		$('#submit-tweet-button1').show();
+
+
 	});
 
+	$('#submit-tweet-button1').click( function(event) {
+		event.stopPropagation();
+		var newTweet = $('#dashboard-tweet-input1').val();
+		
+		$('#dashboard-tweet-input1').val(' ');
+		$('#submit-tweet-button1').hide();
+		$('#dashboard-tweet-input1').height(20);
+		$('#dashboard-tweet-box1').height(50);
+
+		$('.stream-holder').prepend("	<section class='tweet-holder'><article class='tweet-body'>" 
+			+ newTweet + "</article></section>").slideDown();
 
 
-	// $('<li>'+ game.winningMessage()+'</li>').prependTo('#result').slideDown();
-	// $('#result li:gt(3)').fadeOut(function(){
-	// 	$(this).remove();
-	// });
-
-	// $('#score-counter').text('Human: ' + game.player1WinLoseDraw[0] +  ' | Computer: '+ game.player1WinLoseDraw[1] + ' | Draw: ' +game.player1WinLoseDraw[2]  ).slideDown();
-
+	});
 	
 });

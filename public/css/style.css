@@ -313,6 +313,10 @@ a {
 	font-weight: 300;
 }
 
+#dashboard-tweet-input1 {
+	margin-bottom: 10px;
+}
+
 .dashboard-trends-holder {
 	background-color: white;
 	border-radius: 8px;

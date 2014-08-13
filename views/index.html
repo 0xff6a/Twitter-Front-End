@@ -98,9 +98,11 @@
 					</section>
 					</section>
 					<section id='dashboard-tweet-box1' class='dashboard-tweet-box'>
-						<form class='tweet-box' action='/tweets/new' method='post'>
+						<form id='dashboard-tweet-form1' class='tweet-box' action='#' >
 							<input id='dashboard-tweet-input1' type='text' name='tweet-body' placeholder='Compose new Tweet...'>
-							<button class='submit-tweet-button' type='submit'>
+							<a hidden id='submit-tweet-button1'class='submit-tweet-button' href='#'>
+								<i id='new-tweet-nav-icon' class="Icon Icon--tweet Icon--Xlarge"></i>
+							</a>
 						</form>
 					</section>
 				</section>
@@ -149,7 +151,7 @@
 		<div id='dialogue'>
 			<form class='dashboard-tweet-box'>
 				<input id='pop-up-tweet-input' type='text' name='tweet_body'>
-				<a class='submit-tweet-button' href='#'>
+				<a id='submit-tweet-button2' class='submit-tweet-button' href='#'>
 					<i id='new-tweet-nav-icon' class="Icon Icon--tweet Icon--Xlarge"></i>
 				</a>
 			</form>
