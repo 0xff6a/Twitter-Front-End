@@ -5,8 +5,18 @@ $(document).ready(function(){
 	$('#new-tweet-nav-icon').click( function(event){
 		
 		event.preventDefault();
-
 		$('#dialogue').dialog('open');
+
+	});
+
+	$('#submit-tweet-button').click( function(event){
+		
+		event.preventDefault();
+		console.log($('#pop-up-tweet-input').val());
+
+	});
+
+
 
 
 	// $('<li>'+ game.winningMessage()+'</li>').prependTo('#result').slideDown();
@@ -16,5 +26,5 @@ $(document).ready(function(){
 
 	// $('#score-counter').text('Human: ' + game.player1WinLoseDraw[0] +  ' | Computer: '+ game.player1WinLoseDraw[1] + ' | Draw: ' +game.player1WinLoseDraw[2]  ).slideDown();
 
-	});
+	
 });
