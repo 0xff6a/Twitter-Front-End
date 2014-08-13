@@ -107,6 +107,11 @@ a {
 	line-height: 1;
 	background-color: #8c9ca9;
 	margin-top: -4px;
+	opacity: 0.5;
+}
+
+.Icon--Xlarge:hover {
+	opacity: 1;
 }
 
 .Icon {
@@ -335,7 +340,7 @@ a {
 
 .dashboard-nav-link {
 	display: inline-block;
-	margin-right: 10px;
+	margin-right: 5px;
 }
 
 /*Main Feed*/
