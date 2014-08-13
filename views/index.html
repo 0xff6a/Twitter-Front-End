@@ -11,10 +11,30 @@
 			<section class='nav-bar-container'>
 				<nav class='nav-bar'>
 					<ul class='nav-items-right'>
-						<li class='nav-home'>Home</li>
-						<li class='nav-notifications'>Notifications</li>
-						<li class='nav-topics'>Discover</li>
-						<li class='nav-profile'>Me</li>
+						<li class='nav-home'>
+							<a href='#'>
+								<span class="Icon Icon--home Icon--large"></span>
+								<span class='text'>Home</span>
+							</a>
+						</li>
+						<li class='nav-notifications'>
+							<a href='#'>
+								<span class="Icon Icon--connect Icon--large"></span>
+								<span class='text'>Connect</span>
+							</a>
+						</li>
+						<li class='nav-topics'>
+							<a href='#'>
+								<span class="Icon Icon--discover Icon--large"></span>
+								<span class='text'>Discover</span>
+							</a>
+						</li>
+						<li class='nav-profile'>
+							<a href='#'>
+								<span class="Icon Icon--me Icon--large"></span>
+								<span class='text'>Me</span>
+							</a>
+						</li>
 					</ul>
 					<img class='nav-icon' src='http://i.imgur.com/JJ3TOHT.gif'></img>
 					<form class='nav-global-search' action='/search' method='post'>
@@ -83,19 +103,19 @@
 			<section class='main-feed'>
 				<h1 class='main-feed-header'>Tweets</h1>
 				<section class='stream-holder'>
-					<article class='tweet-holder'>
-						<p class='tweet-body'> Tweet Tweet Tweet <p>
-					</article>
-					<article class='tweet-holder'>
-						<p class='tweet-body'> Twoot Twoot Twoot <p>
-					</article>
+					<section class='tweet-holder'>
+						<article class='tweet-body'> Tweet Tweet Tweet </article>
+					</section>
+					<section class='tweet-holder'>
+						<article class='tweet-body'> Twoot Twoot Twoot </article>
+					</section>
 				</section>
 			</section>
 			<aside id='dashboard-right' class='dashboard'>
 				<section class='dashboard-link-container'>
 					<nav class='dashboard-nav'>
-						<h1 class='dashboard-nav-header'>@2104 Twitter</h1>
 						<ul class='dashboard-nav-link-list'>
+							<li class='dashboard-nav-link'>@2014 Twitter</li>
 							<li class='dashboard-nav-link'><a href='/about'>About</a></li>
 							<li class='dashboard-nav-link'><a href='/help'>Help</a></li>
 							<li class='dashboard-nav-link'><a href='/terms'>Terms</a></li>
