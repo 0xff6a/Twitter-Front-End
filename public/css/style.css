@@ -182,6 +182,34 @@ a {
 	color: white;
 }
 
+#dialogue {
+	background-color: #E5F2F7;
+	font-size: 13px;
+}
+
+#pop-up-tweet-input {
+	height: 65px;
+	width: 200px;
+	text-align: center;
+	margin-top: -20px;
+	 
+}
+
+.ui-widget-header {
+	background: none !important;
+	background-color: white !important;
+	border: none !important;
+	font-size: 15px !important;
+	font-family: "Gotham Narrow SSm",sans-serif,Arial !important;
+	color: #8c9ca9 !important;
+	font-weight: normal !important;
+	text-align: center !important;
+}
+
+.ui-dialog {
+	padding: 0px !important;
+}
+
 /*User dashboard left*/
 .dashboard {
 	float: left;
