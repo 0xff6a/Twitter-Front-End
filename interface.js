@@ -12,7 +12,8 @@ $(document).ready(function(){
 	$('#submit-tweet-button').click( function(event){
 		
 		event.preventDefault();
-		console.log($('#pop-up-tweet-input').val());
+		var newTweet = $('#pop-up-tweet-input').val();
+		$('.stream-holder').prepend("	<section class='tweet-holder'><article class='tweet-body'>" + newTweet + "</article></section>").slideDown();
 
 	});
 
