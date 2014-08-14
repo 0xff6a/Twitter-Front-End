@@ -1,8 +1,19 @@
 Friday Challenge: Week 7 @ Makers Academy
 =========================================
 
-Replicate the twitter front end as closely as possible. No back end. Just HTML, CSS, JS.
+Objectives:
+-----------
 
-- Left dashboard tweet input allows user to post to the tweet feed
-- Nav bar tweet icon allows user to post to a stream also
+- Attempt to replicate the twitter homepage as closely as possible in terms of look and feel
+- Challenge focus is on the front end. No back end functionality to be added, only HTMl, CSS, JS
+
+Functionality:
+--------------
+- Replicated nav bar icons transitions
+- Used jQuery to allows users to post to the tweet feed from the left profile dashboard with a resizing tweet input box
+- Used jQuery to allow users to post to the tweet feed from the nav bar
 - Hypno owl gif replaces twitter icon
+
+Viewing the page
+----------------
+Open views/index.html
